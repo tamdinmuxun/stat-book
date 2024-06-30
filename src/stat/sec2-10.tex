@@ -311,26 +311,26 @@ $H_0\colon \theta = \theta_0$ и $H_1\colon \theta = \theta_1$.
     Тогда
     \begin{equation*}
         \alpha \left(\varphi^{*}\right) = 
-        1-F_{\eta, H_0}(C) + \varepsilon\Bigl(F_{\eta, H_0}(C) - F_{\eta, H_0}(C - 0)\Bigr)
+        1-F_{\eta, H_0}(C + 0) + \varepsilon\Bigl(F_{\eta, H_0}(C + 0) - F_{\eta, H_0}(C)\Bigr)
     \end{equation*}
 
     Пусть $g(C) = 1 - F_{\eta, H_0}(C)$, константу $C_{\alpha_{0}}$ можно выбрать так, чтобы было выполнено неравенство:
     \begin{equation*}
-        g(C_{\alpha_{0}}) \leqslant \alpha_{0} \leqslant g(C_{\alpha_{0}} - 0)
+        g(C_{\alpha_{0}} + 0) \leqslant \alpha_{0} \leqslant g(C_{\alpha_{0}})
     \end{equation*}
     Тогда
     \begin{equation*}
         \varepsilon_{\alpha_{0}} = 
         \begin{cases}
-            0, & \text{ если }  g(C_{\alpha_{0}}) = g(C_{\alpha_{0}} - 0) \\
-            \cfrac{\alpha_{0} - g\left(C_{\alpha_{0}}\right)}{g(C_{\alpha_{0}}-0)-g(C_{\alpha_{0}})} \in [0, 1], & \text{ если } g(C_{\alpha_{0}}) < g(C_{\alpha_{0}}-0)
+            0, & \text{ если }  g(C_{\alpha_{0}} + 0) = g(C_{\alpha_{0}}) \\
+            \cfrac{\alpha_{0} - g\left(C_{\alpha_{0}} + 0\right)}{g(C_{\alpha_{0}})-g(C_{\alpha_{0}} + 0)} \in [0, 1], & \text{ если } g(C_{\alpha_{0}} + 0) < g(C_{\alpha_{0}})
         \end{cases}
     \end{equation*}
 
     В обоих случаях выполнено равенство:
     \begin{equation*}
         \alpha_{0} = 
-        g(C_{\alpha_{0}}) + \varepsilon_{\alpha_{0}}\Bigl(g(C_{\alpha_{0}} - 0) - g(C_{\alpha_{0}})\Bigr) =
+        g(C_{\alpha_{0}} + 0) + \varepsilon_{\alpha_{0}}\Bigl(g(C_{\alpha_{0}}) - g(C_{\alpha_{0}} + 0)\Bigr) =
         \alpha\left(\varphi^{*}\right)
     \end{equation*}
 
