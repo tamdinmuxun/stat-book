@@ -23,11 +23,8 @@ jobs:
     - name: Upload
       run: |
         set -e
-        # configure git
-        git config --global user.name "user"
-        git config --global user.email "email"
-
-        # Copy and commit the PDF file
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
         mkdir -p "$GITHUB_WORKSPACE/deploy"
         cp -f main.pdf "$GITHUB_WORKSPACE/deploy/main.pdf"
         cd "$GITHUB_WORKSPACE/deploy"
@@ -35,7 +32,5 @@ jobs:
         git checkout --orphan gh-pages
         git add main.pdf
         git commit -m "[github actions] deploy"
-        git remote add origin https://$TOKEN@github.com/MandaloreUltimate/stat-book.git
+        git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
         git push --force --set-upstream origin gh-pages
-      env:
-        TOKEN: ${{ secrets.TOKEN }}
