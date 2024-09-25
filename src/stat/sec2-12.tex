@@ -39,9 +39,9 @@
     \end{multline*}
     Теперь вспомним, что если $\xi$ и $\eta$ независимы, то $f_{\xi + \eta}(t) = f_{\xi}(t) f_{\eta}(t)$.
     Тогда, если у нас есть независимые случайные величины $\xi_1, \ldots, \xi_n, \: \xi_i \sim \Gamma(\lambda, \alpha_i)$, 
-    то характеристическая функция суммы выражаются следующим образом:
+    то характеристическая функция суммы выражается следующим образом:
     \begin{equation*}
-        \left(\frac{1}{1 - \frac{it}{\lambda}} \right)^\alpha_1 \cdot \ldots \cdot \left(\frac{1}{1 - \frac{it}{\lambda}} \right)^\alpha_n = 
+        \left(\frac{1}{1 - \frac{it}{\lambda}} \right)^{\alpha_1} \cdot \ldots \cdot \left(\frac{1}{1 - \frac{it}{\lambda}} \right)^{\alpha_n} = 
         \left(\frac{1}{1 - \frac{it}{\lambda}} \right)^{\alpha_1 + \ldots + \alpha_n}
     \end{equation*}
 
@@ -78,7 +78,7 @@
 Плотность распределения $\chi^{2}_{k}$ имеет вид
 \begin{equation*}
     f(y) = \begin{cases}
-        \cfrac{1}{2^{x / 2} \Gamma(k / 2)} \, x^{\frac{k}{2}-1} e^{-x / 2}, & \text { если } x>0 \\
+        \cfrac{1}{2^{k / 2} \Gamma(k / 2)} \, x^{\frac{k}{2}-1} e^{-x / 2}, & \text { если } x>0 \\
         0, & \text { если } x \leqslant 0
     \end{cases}
 \end{equation*}
